@@ -2,7 +2,7 @@
 #pragma once
 
 // INCLUDES
-#include "windows.h"
+#include "d3dclass.h"
 
 // GLOBALS
 const bool FULL_SCREEN = false;
@@ -19,7 +19,7 @@ public:
 
 private:
 	bool Render();
-
+	D3DClass* m_D3D;
 public:
 	GraphicsClass();
 	GraphicsClass(const GraphicsClass&);
