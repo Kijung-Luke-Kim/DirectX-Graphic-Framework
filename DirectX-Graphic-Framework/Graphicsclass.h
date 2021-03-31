@@ -3,6 +3,9 @@
 
 // INCLUDES
 #include "d3dclass.h"
+#include "CameraClass.h"
+#include "ModelClass.h"
+#include "ColorShaderClass.h"
 
 // GLOBALS
 const bool FULL_SCREEN = false;
@@ -19,7 +22,13 @@ public:
 
 private:
 	bool Render();
-	D3DClass* m_D3D;
+
+private:
+	D3DClass* m_Direct3D;
+	CameraClass* m_Camera;
+	ModelClass* m_Model;
+	ColorShaderClass* m_ColorShader;
+
 public:
 	GraphicsClass();
 	GraphicsClass(const GraphicsClass&);
